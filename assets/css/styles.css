@@ -1,0 +1,114 @@
+:root{
+  --brand-blue:#0b5ed7;
+  --brand-blue-2:#084298;
+  --text:#0f172a;
+  --muted:#64748b;
+  --border:#e2e8f0;
+  --surface:#ffffff;
+  --surface-2:#f8fafc;
+}
+
+html { scroll-behavior: smooth; }
+
+body{
+  color: var(--text);
+  background: #fff;
+}
+
+.section-pad{ padding: 4rem 0; }
+
+.hero{
+  background: linear-gradient(180deg, rgba(11,94,215,.12), rgba(11,94,215,.02));
+}
+
+.badge-soft{
+  background: rgba(11,94,215,.10);
+  color: var(--brand-blue);
+  border: 1px solid rgba(11,94,215,.20);
+}
+
+.navbar-brand{ letter-spacing: .2px; }
+
+.card{
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+.card.shadow-sm{
+  box-shadow: 0 10px 20px rgba(2, 6, 23, 0.05) !important;
+}
+
+.rounded-4{ border-radius: 1rem !important; }
+
+.img-placeholder{
+  background: var(--surface-2);
+  border: 1px dashed #cbd5e1;
+  border-radius: .9rem;
+  min-height: 180px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: var(--muted);
+  font-weight: 700;
+  text-align:center;
+  padding: 1rem;
+}
+
+footer a{ color: var(--brand-blue); }
+footer a:hover{ color: var(--brand-blue-2); }
+
+@media (max-width: 576px){
+  .section-pad{ padding: 3rem 0; }
+  .display-5{ font-size: 2.0rem; }
+}
+
+/* --- Image styling --- */
+.site-img {
+  width: 100%;
+  height: auto;
+  border-radius: .9rem;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  display: block;
+  object-fit: cover;
+}
+
+.site-img.tall { min-height: 280px; }
+.site-img.square { aspect-ratio: 1 / 1; }
+.site-img.hero { min-height: 320px; }
+
+/* If image fails to load, keep layout pleasant */
+.img-frame {
+  border-radius: .9rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+/* --- Mobile sticky contact bar --- */
+.mobile-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1030; /* above content; below modals */
+  padding: .75rem;
+  background: rgba(255,255,255,.92);
+  border-top: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.mobile-cta .btn {
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+/* Only show the sticky bar on small screens */
+@media (min-width: 768px){
+  .mobile-cta { display: none; }
+}
+
+/* Add spacing so content isn't hidden behind the sticky bar */
+@media (max-width: 767.98px){
+  body { padding-bottom: 84px; }
+}

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,42 +7,15 @@
   <title>Pro Vein Mobile Phlebotomy Services</title>
   <meta name="description" content="Mobile phlebotomy services in the Dallas–Fort Worth area. Routine blood draws, special collections, drug screening, early gender detection, and wellness events." />
 
-  <!-- Bootstrap 5 (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <style>
-    :root { --brand-blue: #0b5ed7; }
-    .hero {
-      background: linear-gradient(180deg, rgba(11,94,215,.10), rgba(11,94,215,.02));
-    }
-    .section-pad { padding: 4rem 0; }
-    .badge-soft {
-      background: rgba(11,94,215,.10);
-      color: var(--brand-blue);
-      border: 1px solid rgba(11,94,215,.20);
-    }
-    .img-placeholder {
-      background: #f2f4f7;
-      border: 1px dashed #cbd5e1;
-      border-radius: .75rem;
-      min-height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #64748b;
-      font-weight: 600;
-    }
-  </style>
+  <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-
-  <!-- Nav -->
   <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#top">Pro Vein Mobile Phlebotomy</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -56,7 +30,6 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <header id="top" class="hero">
     <div class="container section-pad">
       <div class="row align-items-center g-4">
@@ -68,10 +41,9 @@
             and wellness events — with flexible scheduling for clinics, facilities, and house calls.
           </p>
 
-          <!-- TODO: replace placeholders below -->
           <div class="d-flex flex-wrap gap-2 mt-4">
-            <a class="btn btn-primary btn-lg" href="tel:+1XXXXXXXXXX">Call: (XXX) XXX-XXXX</a>
-            <a class="btn btn-outline-primary btn-lg" href="mailto:youremail@domain.com">Email Us</a>
+            <a class="btn btn-primary btn-lg" href="tel:+15551234567">Call: (555) 123-4567</a>
+            <a class="btn btn-outline-primary btn-lg" href="mailto:appointments@proveinmobilephlebotomy.com">Email Us</a>
           </div>
 
           <p class="small text-secondary mt-3 mb-0">
@@ -80,18 +52,27 @@
         </div>
 
         <div class="col-lg-5">
-          <!-- Replace with a real image later -->
-          <div class="img-placeholder">Add a hero photo (you + mobile kit)</div>
-          <div class="row g-3 mt-3">
-            <div class="col-6"><div class="img-placeholder">Photo</div></div>
-            <div class="col-6"><div class="img-placeholder">Photo</div></div>
+          <div class="img-frame">
+            <img class="site-img hero" src="assets/img/hero.jpg" alt="Mobile phlebotomy services" loading="lazy">
           </div>
+          <div class="row g-3 mt-3">
+            <div class="col-6">
+              <div class="img-frame">
+                <img class="site-img square" src="assets/img/hero-2.jpg" alt="Professional blood draw kit" loading="lazy">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-frame">
+                <img class="site-img square" src="assets/img/hero-3.jpg" alt="Client care and comfort" loading="lazy">
+              </div>
+            </div>
+          </div>
+          <p class="small text-secondary mt-2 mb-0">Tip: Use bright, clean photos with natural light.</p>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Services -->
   <section id="services" class="section-pad">
     <div class="container">
       <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
@@ -164,12 +145,13 @@
     </div>
   </section>
 
-  <!-- About -->
   <section id="about" class="section-pad bg-light">
     <div class="container">
       <div class="row g-4 align-items-center">
         <div class="col-lg-5">
-          <div class="img-placeholder">Add “Meet the Phlebotomist” photo</div>
+          <div class="img-frame">
+            <img class="site-img tall" src="assets/img/brenda.jpg" alt="Brenda Williams, licensed phlebotomist" loading="lazy">
+          </div>
         </div>
         <div class="col-lg-7">
           <h2 class="fw-bold">Meet the Phlebotomist</h2>
@@ -185,15 +167,12 @@
             <li>Mobile scheduling for home or facility visits</li>
           </ul>
 
-          <p class="mb-0 text-secondary">
-            Serving the <strong>Dallas–Fort Worth</strong> area.
-          </p>
+          <p class="mb-0 text-secondary">Serving the <strong>Dallas–Fort Worth</strong> area.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Partners / Service Types -->
   <section id="partners" class="section-pad">
     <div class="container">
       <h2 class="fw-bold mb-3">Who We Work With</h2>
@@ -227,13 +206,12 @@
       <div class="mt-4 p-4 rounded-4 bg-light border">
         <h5 class="fw-bold mb-2">Participating Labs</h5>
         <p class="text-secondary mb-0">
-          Replace this line with the lab names you want listed (or keep it general if you prefer).
+          We work with participating labs and follow required handling and drop-off procedures.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="section-pad bg-light">
     <div class="container">
       <div class="row g-4">
@@ -243,36 +221,33 @@
             Call or email to schedule or ask questions. No online forms.
           </p>
 
-          <!-- TODO: replace placeholders -->
           <div class="list-group shadow-sm">
-            <a class="list-group-item list-group-item-action" href="tel:+1XXXXXXXXXX">
-              <strong>Phone:</strong> (XXX) XXX-XXXX
+            <a class="list-group-item list-group-item-action" href="tel:+15551234567">
+              <strong>Phone:</strong> (555) 123-4567
             </a>
-            <a class="list-group-item list-group-item-action" href="mailto:youremail@domain.com">
-              <strong>Email:</strong> youremail@domain.com
+            <a class="list-group-item list-group-item-action" href="mailto:appointments@proveinmobilephlebotomy.com">
+              <strong>Email:</strong> appointments@proveinmobilephlebotomy.com
             </a>
             <div class="list-group-item">
               <strong>Business Address:</strong>
-              <div class="text-secondary">Add address here (or “Dallas–Fort Worth, TX” if you don’t want a street address)</div>
+              <div class="text-secondary">1234 Medical Plaza Dr, Suite 200, Dallas, TX 75201</div>
             </div>
-          </div>
-
-          <div class="mt-3 small text-secondary">
-            <strong>Tip:</strong> If you don’t want to show a home address, list “Dallas–Fort Worth, TX” and your service area instead.
           </div>
         </div>
 
         <div class="col-lg-6">
           <div class="p-4 border rounded-4 bg-white h-100 shadow-sm">
             <h5 class="fw-bold">Hours & Service Area</h5>
-            <p class="text-secondary mb-2"><strong>Hours:</strong> Mon–Fri (example), weekends by request</p>
+            <p class="text-secondary mb-2"><strong>Hours:</strong> Mon–Fri 8am–5pm, weekends by request</p>
             <p class="text-secondary mb-3"><strong>Service Area:</strong> Dallas–Fort Worth and surrounding areas</p>
 
-            <div class="img-placeholder">Optional: add a simple map image / service area graphic</div>
+            <div class="img-frame">
+              <img class="site-img" src="assets/img/map.jpg" alt="Service area map" loading="lazy">
+            </div>
 
             <div class="mt-3">
-              <a class="btn btn-primary w-100" href="tel:+1XXXXXXXXXX">Call to Schedule</a>
-              <a class="btn btn-outline-primary w-100 mt-2" href="mailto:youremail@domain.com">Email Us</a>
+              <a class="btn btn-primary w-100" href="tel:+15551234567">Call to Schedule</a>
+              <a class="btn btn-outline-primary w-100 mt-2" href="mailto:appointments@proveinmobilephlebotomy.com">Email Us</a>
             </div>
           </div>
         </div>
@@ -291,9 +266,17 @@
     </div>
   </section>
 
+  <!-- Mobile sticky call/email bar -->
+  <div class="mobile-cta">
+    <div class="container">
+      <div class="d-flex gap-2">
+        <a class="btn btn-primary flex-fill" href="tel:+15551234567">Call</a>
+        <a class="btn btn-outline-primary flex-fill" href="mailto:appointments@proveinmobilephlebotomy.com">Email</a>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
